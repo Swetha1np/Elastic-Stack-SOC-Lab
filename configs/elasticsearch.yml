@@ -1,0 +1,30 @@
+# =================== Elasticsearch Configuration ===================
+# SOC Project - Elasticsearch Config
+
+# Cluster & node identity
+cluster.name: elk-lab
+node.name: elastic-soc-node
+
+# Data & log paths
+path.data: C:/Elastic/es-data
+path.logs: C:/Elastic/es-logs
+
+# Network
+network.host: 127.0.0.1
+http.port: 9200
+
+# Single node discovery
+discovery.type: single-node
+
+# Security
+xpack.security.enabled: true
+xpack.security.transport.ssl.enabled: false
+xpack.security.http.ssl.enabled: false
+
+# Disk watermark settings
+cluster.routing.allocation.disk.watermark.low: 95%
+cluster.routing.allocation.disk.watermark.high: 97%
+cluster.routing.allocation.disk.watermark.flood_stage: 98%
+
+# Memory
+node.store.allow_mmap: false

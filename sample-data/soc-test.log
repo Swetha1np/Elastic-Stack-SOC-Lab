@@ -1,0 +1,2 @@
+2026-10-28T09:00:00Z INFO soc-lab event=login_success user=analyst source_ip=192.0.2.10
+2026-10-28T09:01:00Z WARN soc-lab event=login_failure user=testuser source_ip=198.51.100.23

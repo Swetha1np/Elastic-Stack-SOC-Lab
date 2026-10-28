@@ -1,0 +1,10 @@
+# ================================ Elastic Agent Configuration ================================
+# SOC Project - Elastic Agent Config
+# Agent is managed via Kibana Fleet UI.
+# Most settings are configured through the Fleet interface rather than this file.
+
+fleet:
+  enabled: true
+
+# Agent downloads, process, and retry settings are managed via Fleet UI.
+# See Kibana → Fleet → Agent Policies for active integrations and data collection rules.

@@ -1,0 +1,8 @@
+- module: apache
+  access:
+    enabled: true
+    var.paths:
+      - "C:/Apache24/logs/access_log*"
+  error:
+    enabled: false
+

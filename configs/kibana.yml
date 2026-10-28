@@ -1,0 +1,17 @@
+# =================== Kibana Configuration ===================
+# SOC Project - Kibana Config (credentials removed for security)
+
+# Server settings
+server.port: 5601
+server.host: "localhost"
+
+# Elasticsearch connection
+elasticsearch.hosts: ["http://127.0.0.1:9200"]
+
+# Service account token - store in environment variable
+elasticsearch.serviceAccountToken: "${KIBANA_SERVICE_ACCOUNT_TOKEN}"
+
+# Encryption keys - store in environment variable
+xpack.encryptedSavedObjects.encryptionKey: "${KIBANA_ENCRYPTION_KEY}"
+xpack.reporting.encryptionKey: "${KIBANA_REPORTING_KEY}"
+xpack.security.encryptionKey: "${KIBANA_SECURITY_KEY}"
